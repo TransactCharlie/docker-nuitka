@@ -18,8 +18,3 @@ Docker builds are created on pushes and hosted on dockerhub.
 
 ## Current Nuitka Build Version
 0.5.30
-
-## Build Status
-[![Build Status](https://travis-ci.org/TransactCharlie/docker-nuitka.svg?branch=master)](https://travis-ci.org/TransactCharlie/docker-nuitka)
-[![](https://images.microbadger.com/badges/image/transactcharlie/docker-nuitka.svg)](https://microbadger.com/images/transactcharlie/docker-nuitka "Get your own image badge on microbadger.com")
-[![](https://images.microbadger.com/badges/version/transactcharlie/docker-nuitka.svg)](https://microbadger.com/images/transactcharlie/docker-nuitka "Get your own version badge on microbadger.com")
