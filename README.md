@@ -16,6 +16,8 @@ Will get you into an interactive bash session where you can try out nuitka.
 ## Pipeline
 Docker builds are created on pushes and hosted on dockerhub.
 
+## Current Nuitka Build Version
+0.5.30
 
 ## Build Status
 [![Build Status](https://travis-ci.org/TransactCharlie/docker-nuitka.svg?branch=master)](https://travis-ci.org/TransactCharlie/docker-nuitka)
