@@ -16,7 +16,7 @@ COPY_TO=$2
 /build_scripts/lddrecursor.py ${APP} xx| xargs -I '{}' cp --no-clobber -v '{}' ${COPY_TO}
 
 # Copy the fixed ld.so linker lib to app.dist/<fixed>/<linker_lib>.sp
-echo "/lib64/ld-linux-x86-64" | xargs -I '{}' cp --parents -v '{}' ${COPY_TO}
+echo "/lib64/ld-linux-x86-64.so.2" | xargs -I '{}' cp --parents -v '{}' ${COPY_TO}
 
 # libgcc fixes a bunch of problems on closedown of apps
 cp --no-clobber -v /lib/x86_64-linux-gnu/libgcc_s.so.1 ${COPY_TO}

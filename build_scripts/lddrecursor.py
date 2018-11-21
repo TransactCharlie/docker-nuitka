@@ -22,9 +22,6 @@ def get_linkages(filename):
                 continue
             else:
                 libs.append(s[2].strip())
-        else:
-            if len(s) == 2:
-                libs.append(s[0].strip())
 
     return libs
 
