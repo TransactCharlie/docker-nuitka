@@ -13,6 +13,6 @@ LABEL org.label-schema.name="Docker Nuitka Build Base" \
       org.label-schema.description="Docker Image premade with Python3, docker.io and nuitka compiler"
 
 RUN apt-get update
-RUN apt-get install -y python3-dev python python3-pip chrpath docker.io
+RUN apt-get install -y python3-dev ccache python python3-pip chrpath docker.io
 RUN pip3 install --upgrade pip nuitka==$NUITKA_VERSION
 COPY build_scripts /build_scripts
