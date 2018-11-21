@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 ARG VCS_REF
 ARG BUILD_DATE
-ENV NUITKA_VERSION 0.5.30
+ENV NUITKA_VERSION 0.6.0.6 
 
 MAINTAINER Charlie Gildawie <charles.gildawie@gmail.com>
 LABEL org.label-schema.name="Docker Nuitka Build Base" \
@@ -15,3 +15,4 @@ LABEL org.label-schema.name="Docker Nuitka Build Base" \
 RUN apt-get update
 RUN apt-get install -y python3-dev python python3-pip chrpath docker.io
 RUN pip3 install --upgrade pip nuitka==$NUITKA_VERSION
+COPY build_scripts /build_scripts
